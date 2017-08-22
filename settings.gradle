@@ -5,4 +5,7 @@ include 'template'
 include 'anagram'
 include 'sort'
 include 'mergeSortedArray'
+include 'palindrome'
+include 'rectangle'
+include 'longestPalindrome'
 
