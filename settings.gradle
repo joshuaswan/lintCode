@@ -8,4 +8,5 @@ include 'mergeSortedArray'
 include 'palindrome'
 include 'rectangle'
 include 'longestPalindrome'
+include 'triangleCount'
 
