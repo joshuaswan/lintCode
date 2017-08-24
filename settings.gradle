@@ -16,4 +16,6 @@ include 'removeListElement'
 include 'reverseInteger'
 include 'addLists'
 include 'twoSum'
+include 'findString'
+include 'fizzBuzz'
 
