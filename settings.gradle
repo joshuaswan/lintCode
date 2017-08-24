@@ -18,4 +18,5 @@ include 'addLists'
 include 'twoSum'
 include 'findString'
 include 'fizzBuzz'
+include 'findPeak'
 
