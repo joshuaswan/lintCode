@@ -19,4 +19,8 @@ include 'twoSum'
 include 'findString'
 include 'fizzBuzz'
 include 'findPeak'
+include 'trailingZeros'
+include 'aPlusB'
+include 'digitCounts'
+include 'rotateString'
 
