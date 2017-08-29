@@ -58,18 +58,24 @@ public class AddBinary {
                 flag = false;
             }
         }
-        int i=0;
-        for (;i< resultS.length;i++){
-            if (resultS[i] == '0'){
+        int i = 0;
+        for (; i < resultS.length; i++) {
+            if (resultS[i] == '0') {
                 resultS[i] = 0;
-            }else if (resultS[i] == '1'){
+            } else if (resultS[i] == '1') {
                 break;
             }
         }
-        if (i== resultS.length){
-            resultS[i-1] = '0';
+        if (i == resultS.length) {
+            resultS[i - 1] = '0';
         }
-        return String.valueOf(resultS);
+        StringBuffer stringBuffer = new StringBuffer();
+        for (int j = 0; j < resultS.length; j++) {
+            if (resultS[j] != 0) {
+                stringBuffer.append(resultS[j]);
+            }
+        }
+        return stringBuffer.toString();
     }
 
     public char[] full(char[] source, int resultLength) {

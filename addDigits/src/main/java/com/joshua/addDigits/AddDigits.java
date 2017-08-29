@@ -25,4 +25,14 @@ public class AddDigits {
         return result;
     }
 
+    public int add(int num){
+        if (num < 10){
+            return num;
+
+        }
+        else {
+
+        }
+        return num;
+    }
 }
