@@ -29,4 +29,5 @@ include 'countOnes'
 include 'minPathSum'
 include 'partitionArray'
 include 'addBinary'
+include 'addDigits'
 

@@ -52,15 +52,22 @@ public class AddBinary {
             } else {
                 if (flag) {
                     resultS[i] = '1';
-                    flag = false;
                 } else {
                     resultS[i] = '0';
-                    flag = false;
                 }
+                flag = false;
             }
         }
-        if (resultS[0] == '0') {
-            resultS[0] = 0;
+        int i=0;
+        for (;i< resultS.length;i++){
+            if (resultS[i] == '0'){
+                resultS[i] = 0;
+            }else if (resultS[i] == '1'){
+                break;
+            }
+        }
+        if (i== resultS.length){
+            resultS[i-1] = '0';
         }
         return String.valueOf(resultS);
     }
