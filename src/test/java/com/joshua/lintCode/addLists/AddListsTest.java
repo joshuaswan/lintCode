@@ -8,12 +8,12 @@ import org.junit.Test;
 public class AddListsTest {
     @Test
     public void addLists() throws Exception {
-        ListNode list1 = new ListNode(1);
-        ListNode list2 = new ListNode(2);
-        list1.next = new ListNode(4);
-        list1.print();
-        list2.print();
-        new AddLists().addLists(list1,list2).print();
+//        ListNode list1 = new ListNode(1);
+//        ListNode list2 = new ListNode(2);
+//        list1.next = new ListNode(4);
+//        list1.print();
+//        list2.print();
+//        new AddLists().addLists(list1,list2).print();
     }
 
 }
