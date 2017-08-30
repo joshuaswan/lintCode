@@ -5,37 +5,42 @@ package com.joshua.lintCode;
  */
 public class FlipBits {
     /**
-     *@param a, b: Two integer
-     *return: An integer
+     * @param a, b: Two integer
+     *           return: An integer
      */
     public static int bitSwapRequired(int a, int b) {
         // write your code here
-        int diff = 0;
-        if (a>b){
-            diff = a-b;
-        }else {
-            diff = a-b;
-        }
-        return countOnes(diff);
-    }
-    public static int countOnes(int num) {
-        // write your code here
         int count = 0;
-        if (num < 0){
-            num = 2147483647 + num + 1;
+        long tempA = a;
+        long tempB = b;
+        if (a == b) {
+            return 0;
+        }
+        if (a < 0) {
+            tempA = 2147483647 + a + 1;
             count++;
         }
-        if (num == 1) {
-            return 1;
+        if (b < 0) {
+            tempB = 2147483647 + b + 1;
+            count++;
         }
-        while (num / 2 > 0) {
-            if (num % 2 == 1) {
+        if (a < 0 && b < 0) {
+            count--;
+        }
+
+        if (tempA == 0 || tempB == 0) {
+            count++;
+        } else if (tempA > tempB && tempA / tempB >= 2) {
+            count++;
+        } else if (tempA < tempB && tempB / tempA >= 2) {
+            count++;
+        }
+        while (tempA / 2 > 0 || tempB / 2 > 0) {
+            if (tempA % 2 != tempB % 2) {
                 count++;
             }
-            num = num / 2;
-        }
-        if (num == 1) {
-            count++;
+            tempB = tempB / 2;
+            tempA = tempA / 2;
         }
         return count;
     }

@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 public class FlipBitsTest {
     @Test
     public void flipBits() throws Exception {
-        System.out.println(FlipBits.bitSwapRequired(31,4));
+        System.out.println(FlipBits.bitSwapRequired(-2147483648,2147483647));
     }
 
 }
