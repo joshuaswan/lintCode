@@ -11,28 +11,27 @@ public class AddDigits {
     public int addDigits(int num) {
         // Write your code here
         int result = 0;
-        if (num < 10){
-            return num;
+        if (num < 0){
+            return 1;
         }
         do {
-            do {
-                result += num % 10;
-                num = num/10;
-            }while (num / 10 != 0);
-            result += num;
+            result = add(num);
             num = result;
         } while (result >= 10);
         return result;
     }
 
     public int add(int num){
+        int result = 0;
         if (num < 10){
             return num;
-
         }
         else {
-
+            do {
+                result += num %10;
+                num = num/10;
+            }while (num/10!=0);
         }
-        return num;
+        return result + num;
     }
 }

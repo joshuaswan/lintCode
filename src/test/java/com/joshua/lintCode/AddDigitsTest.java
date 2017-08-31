@@ -8,8 +8,7 @@ import org.junit.Test;
 public class AddDigitsTest {
     @Test
     public void addDigits() throws Exception {
-        System.out.println(
-                new AddDigits().addDigits(21786)
-        );
+        System.out.println(new AddDigits().addDigits(21786));
+//        System.out.println(new AddDigits().add(127384));
     }
 }
