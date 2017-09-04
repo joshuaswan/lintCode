@@ -1,4 +1,6 @@
-package com.joshua.lintCode;
+package com.joshua.lintCode.treeNode;
+
+import com.joshua.lintCode.treeNode.TreeNode;
 
 /**
  * Created by joshua on 2017/9/1.

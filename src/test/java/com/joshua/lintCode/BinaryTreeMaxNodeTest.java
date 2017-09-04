@@ -1,8 +1,8 @@
 package com.joshua.lintCode;
 
+import com.joshua.lintCode.treeNode.BinaryTreeMaxNode;
+import com.joshua.lintCode.treeNode.TreeNode;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by joshua on 2017/9/1.
