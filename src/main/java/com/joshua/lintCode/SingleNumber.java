@@ -1,0 +1,27 @@
+package com.joshua.lintCode;
+
+/**
+ * Created by joshua on 2017/9/5.
+ */
+public class SingleNumber {
+    /**
+     * @param A: An integer array
+     * @return: An integer
+     */
+    public int singleNumber(int[] A) {
+        // write your code here
+        int result = 0;
+        for (int i=0;i<A.length;i++){
+            int count = 0;
+            for (int j=0;j<A.length;j++){
+                if (A[i] == A[j]){
+                    count ++;
+                }
+            }
+            if (count ==1 ){
+                return A[i];
+            }
+        }
+        return result;
+    }
+}
