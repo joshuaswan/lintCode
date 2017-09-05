@@ -1,5 +1,7 @@
 package com.joshua.lintCode.addLists;
 
+import com.joshua.lintCode.ListNode.ListNode;
+
 /**
  * Created by joshua on 2017/8/24.
  */

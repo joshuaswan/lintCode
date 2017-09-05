@@ -1,4 +1,4 @@
-package com.joshua.lintCode.addLists;
+package com.joshua.lintCode.ListNode;
 
 /**
  * Created by joshua on 2017/8/24.
@@ -6,10 +6,9 @@ package com.joshua.lintCode.addLists;
 public class ListNode {
     int val;
     ListNode next;
-
-    ListNode(int x) {
-        val = x;
-        next = null;
+    ListNode(int val) {
+        this.val = val;
+        this.next = null;
     }
 
     public void print(){
