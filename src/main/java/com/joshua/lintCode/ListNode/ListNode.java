@@ -4,9 +4,9 @@ package com.joshua.lintCode.ListNode;
  * Created by joshua on 2017/8/24.
  */
 public class ListNode {
-    int val;
-    ListNode next;
-    ListNode(int val) {
+    public int val;
+    public ListNode next;
+    public ListNode(int val) {
         this.val = val;
         this.next = null;
     }
