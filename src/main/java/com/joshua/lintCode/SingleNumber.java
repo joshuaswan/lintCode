@@ -1,5 +1,8 @@
 package com.joshua.lintCode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by joshua on 2017/9/5.
  */
@@ -11,11 +14,16 @@ public class SingleNumber {
     public int singleNumber(int[] A) {
         // write your code here
         int result = 0;
+        List resultList = new ArrayList();
         for (int i=0;i<A.length;i++){
             int count = 0;
-            for (int j=0;j<A.length;j++){
+            for (int j=i;j<A.length;j++){
+                if (resultList.contains(j)){
+                    continue;
+                }
                 if (A[i] == A[j]){
                     count ++;
+                    resultList.add(j);
                 }
             }
             if (count ==1 ){
